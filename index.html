@@ -3,8 +3,12 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/mstyle.css">
         <title>Титульная страница</title>
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Grandstander:wght@300&display=swap" rel="stylesheet"> 
+        <script src="https://kit.fontawesome.com/6ba9fcaed3.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <div id="particles">
@@ -35,11 +39,23 @@
                 </p>
                 <hr class="sepLine">
                 <div class="mobSocContact">
-                    <div class="wrapper"><a></a></div>
-                    <div class="wrapper"><a></a></div>
-                    <div class="wrapper"><a></a></div>
-                    <div class="wrapper"><a></a></div>
+                <div class="wrapper">
+                    <a href="mailto:igor.bogodukh@gmail.com?Subject=Hello"><i
+                            class="far fa-envelope mobContact"></i></a>
                 </div>
+                <div class="wrapper">
+                    <a href="https://twitter.com/@Igor11783055" target="_blank" rel="noreferrer"><i
+                            class="fab fa-twitter mobContact"></i></a>
+                </div>
+                <div class="wrapper">
+                    <a href="https://facebook.com/IgorBogodukh" target="_blank" rel="noreferrer">
+                        <i class="fab fa-facebook mobContact"></i>
+                </div>
+                <div class="wrapper">
+                    <a href="./resume.html"><i class="fas fa-file mobContact mobResShow"></i></a>
+                </div>
+                </div>
+            
                 <hr class="btmSepLine">
             </section>
             <section class="images">
@@ -48,18 +64,18 @@
                 </p>
                 <div class="imageLinks">
                     <div class="wrapper">
-                        <img class="imgProj">
+                        <img class="imgProj" src="img/github.png" title="GitHub" alt="link to github">
                         <div class="overlay">
                             <div class="label">
-                            <a></a>
+                            <a href="https://github.com/igrus97" target="_blank" rel="noreferrer">GitHub</a>
                             </div>
                         </div>
                     </div>
                     <div class="wrapper">
-                        <img class="imgProj">
+                        <img class="imgProj" src="img/bitbucket.png" title="BitBucket" alt="link to bitbucket">
                         <div class="overlay">
                             <div class="label">
-                            <a></a>
+                            <a href="https://bitbucket.org/Igrus97" target="_blank" rel="noreferrer">BitBucket</a>
                             </div>
                         </div>
                     </div>
@@ -80,7 +96,7 @@
                         <img src="" class="projImg" alt="Screenshot of my portfolio">
                         <div class="projText1">
                             <p class="proj">
-                                <a></a>
+                                <a href="https://github.com/Igrus97/igrus97.github.io" target="_blank" rel="noreferrer"></a>
                             </p>
                         </div>
                     </div>
@@ -102,18 +118,20 @@
                     <h3>Отправь мне сообщение</h3>
                     <p class="form-header">Жду обратной связи!</p>
                     <div id="contact-me-form" class="form-wrapper">
-                        <form class="contact-form" method="POST" action="">
+                        <form class="contact-form" method="POST" action="./contact.html">
                             <input type="hidden" name="form-name" value="form 1">
                             <div class="form-fields">
                                 <label for="name">Ваше имя</label>
-                                <input id="name" type="text" name="name" placeholder="Name" required="">
+                                <input id="name" type="text" name="name" placeholder="Ваше имя" required="">
                                 <label class="email-label" for="emailAddress">E-mail адрес</label>
-                                <input id="emailAddress" type="email" name="emailAddress" placeholder="Your email address" required="">
+                                <input id="emailAddress" type="email" name="emailAddress" placeholder="Ваша почта" required="">
                             </div>
                             <div class="form-text">
                                 <label for="message-box">Сообщение</label>
-                                <textarea id="message-box" class="messageBox" rows="5" name="message-box" placeholder="Type your message here" required=""></textarea>
-                                <button type="submit">Отправить</button>
+                                <textarea id="message-box" class="messageBox" rows="5" name="message-box" placeholder="Пишите сюда" required=""></textarea>
+                                <button type="submit">
+                                    Отправить
+                                </button>
                             </div>
                         </form>
                     </div>
@@ -122,31 +140,38 @@
         </div>
         <div class="linkMenu">
             <a id="menu-share" class="float" href="#">
-                <i class="">::before</i>
+                <i class="fas fa-bars"></i>
             </a>
             <ul class="float-menu">
                 <li class="float-list">
                     <a href="index.html#contact">
-                        <span class="linkLabel">Contact</span>
-                        <i class=""></i>
+                        <span class="linkLabel">Контакт</span>
+                        <i class="far fa-envelope my-float">
+                        </i>
                     </a>
                 </li>
                 <li class="float-list">
-                    <a href="index.html#contact">
-                        <span class="linkLabel">Contact</span>
-                        <i class="far fa-envelope my-float"></i>
+                    <a href="https://github.com/Igrus97" target="blank" rel="noreferrer">
+                        <span class="linkLabel">GitHub</span>
+                        <i class="fab fa-github my-float"></i>
                     </a>
                 </li>
                 <li class="float-list">
-                    <a href="index.html#contact">
-                        <span class="linkLabel">Contact</span>
-                        <i class=""></i>
+                    <a href="https://twitter.com/@Igor11783055" target="_blank" rel="noreferrer">
+                        <span class="linkLabel">Twitter</span>
+                        <i class="fab fa-twitter my-float">                       </i>
                     </a>
                 </li>
                 <li class="float-list">
-                    <a href="index.html#contact">
-                        <span class="linkLabel">Contact</span>
-                        <i class=""></i>
+                    <a href="https://facebook.com/IgorBogodukh">
+                        <span class="linkLabel">Facebook</span>
+                        <i class="fab fa-facebook my-float"></i>
+                    </a>
+                </li>
+                <li class="float-list">
+                    <a href="./resume.html">
+                        <span class="linkLabel">Резюме</span>
+                        <i class="fas fa-file my-float"></i>
                     </a>
                 </li>
             </ul>

@@ -167,8 +167,13 @@ window.onload = function() {
 
 
 //Код для динамической смены тайтла
-
-    //1. Берем контроль над тайтлом 
+window.onblur = function () {
+    document.title = 'Возвращайтесь!:)!';
+}
+window.onfocus = function () {
+    document.title = 'Игорь Богодух';
+}
+  /*  //1. Берем контроль над тайтлом 
     const prev_handler = window.onload;
     window.onload = function() {
         if (prev_handler) {
@@ -199,4 +204,15 @@ window.onload = function() {
             }
           }, 100);
         }
-      };
+      };*/
+
+      // Mobile Navbar toggle script
+function showNav() {
+    let x = document.getElementById("mobLinks");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+}
+
